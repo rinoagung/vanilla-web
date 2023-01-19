@@ -1,0 +1,643 @@
+@font-face {
+    font-family: "sriracha";
+    src: url("../font/Sriracha-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("../font/Montserrat-SemiBold.ttf");
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-bold", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+article.satu {
+    display: flex;
+    align-items: center;
+}
+
+article.dua {
+    margin-top: 30px;
+}
+
+article h3,
+article span p {
+    text-align: justify;
+    margin-right: 20px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.detail-order{
+    text-align: center;
+    margin: 100px 0 20px;
+}
+
+.dua .layanan {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+.dua .layanan > div {
+    margin: 20px 0px;
+    border: 3px solid #ff8d29;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 0px;
+}
+.dua .layanan > div > div > span {
+    font-size: 28px;
+    margin-left: 10px;
+    font-family: "Montserrat-bold", sans-serif;
+}
+.dua .layanan > div > div,
+.kirim {
+    display: flex;
+    align-items: center;
+}
+.dua .layanan div p {
+    margin: 30px 0px;
+    text-align: justify;
+}
+
+.dua .svg {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin: 35px 30px;
+}
+
+#form form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#form form > div {
+    width: 45%;
+}
+
+#form form > div > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    flex-grow: 3;
+}
+
+#form form label {
+    margin: 10px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    box-shadow: 0px 6px 12px black;
+}
+
+footer > div > a {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer > div {
+    display: flex;
+}
+
+.github,
+.instagram,
+.linkedin {
+    width: 32px;
+    transition: all 0.5s;
+}
+
+.github::after {
+    content: "github";
+}
+.linkedin::after {
+    content: "Linkedin";
+}
+.instagram::after {
+    content: "Instagram";
+}
+
+.github::after,
+.linkedin::after,
+.instagram::after {
+    width: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.github:hover::after,
+.linkedin:hover::after,
+.instagram:hover::after {
+    margin-left: 8px;
+    opacity: 1;
+}
+
+.github:hover,
+.linkedin:hover,
+.instagram:hover {
+    width: 95px;
+}
+
+.input {
+    border-color: #ff8d29;
+    border-radius: 7px;
+}
+
+.input[type="text"],
+.input[type="number"] {
+    padding: 5px 10px;
+}
+.input[type="text"]:focus,
+.input[type="number"]:focus {
+    box-shadow: 0px 0px 25px -6px #ffd59e;
+    outline: 1px solid #f8b400;
+}
+
+form .inputfile {
+    border: 1px solid #ff8d29;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    background-color: transparent;
+    position: static;
+    /* z-index: -1; */
+}
+
+input[type="file"]:hover,
+input[type="file"]::-webkit-file-upload-button:hover {
+    cursor: pointer;
+}
+
+form .inputfile input[type="file"] {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -20px;
+}
+input[type="file"]::-webkit-file-upload-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 60px;
+    left: 55px;
+}
+
+.kirim {
+    padding: 5px 8px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.151);
+    color: #ff8d29;
+    background-color: transparent;
+}
+
+.kirim:active {
+    border: none;
+    padding-top: 10px;
+}
+
+main#content {
+    display: flex;
+    padding: 30px 30px;
+    flex-direction: column;
+}
+
+main#content article aside {
+    height: auto;
+    width: 140%;
+    padding: 20px 20px;
+    background-color: #fff7bc;
+    margin: 30px 0;
+    border-radius: 10px;
+    justify-content: center;
+}
+main#content article aside h1 {
+    font-family: "Montserrat", sans-serif !important;
+}
+main#content article aside div h5 {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#content article aside div h5 div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+main#content article aside div p {
+    margin: 15px;
+    overflow-y: hidden;
+    text-align: justify;
+}
+.hilang {
+    display: none;
+}
+
+.img-me {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.me {
+    width: 100%;
+    height: auto;
+    background-color: #fff7bc;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-more {
+    border-bottom: 5px solid #f66b0e;
+    width: 120px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    border-radius: 3px;
+    align-items: flex-start;
+}
+
+.me-1 {
+    padding: 20px;
+    width: 100%;
+}
+
+.me-1 div {
+    display: flex;
+    justify-content: space-between;
+}
+.me-1 div th {
+    text-align: start;
+    padding-right: 10px;
+}
+.me-1 div td a {
+    text-decoration: none;
+    color: blue;
+}
+
+.me-1 div > img {
+    border-radius: 8px;
+    margin: 20px;
+    width: 100px;
+}
+
+.muncul {
+    display: block;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 16px 11px -20px #ffcd38;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "sriracha";
+    position: relative;
+    opacity: 0.7;
+}
+nav ul li a:hover {
+    opacity: 1;
+}
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 14%;
+    background-color: #ff8d29;
+    height: 3px;
+    bottom: -3px;
+    transition: width 0.2s;
+}
+
+.active {
+    border-bottom: 3px solid #ff8d29;
+    width: fit-content;
+    opacity: 1;
+}
+
+nav ul li a:hover:after {
+    width: 70%;
+}
+
+.text-more {
+    display: none;
+}
+
+.toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.toggle span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.togglesatu {
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate(-2px, -1px);
+    transition: transform 0.3s;
+}
+
+.toggledua {
+    opacity: 0;
+}
+
+.toggletiga {
+    transform-origin: 0 100%;
+    transform: rotate(-45deg) translate(-3px, 0);
+    transition: transform 0.3s;
+}
+
+.toggle:hover,
+aside div h5:hover,
+.kirim:hover,
+.read-more:hover {
+    cursor: pointer;
+    user-select: none;
+}
+
+.nama h4 {
+    font-family: cursive, sans-serif;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 450px) {
+    article.satu h3 {
+        font-size: 14px !important;
+    }
+
+    article.satu p {
+        font-size: 12px !important;
+    }
+
+    form .inputfile {
+        width: 100px;
+        height: 50px;
+    }
+
+    .detail-order p{
+        font-size: 12px;
+    }
+
+    .dua .layanan > div > div > span {
+        font-size: 18px;
+    }
+    .dua .layanan > div > p {
+        font-size: 14px;
+    }
+
+    form .inputfile input[type="file"] {
+        width: 100%;
+        height: 120%;
+        position: relative;
+        top: -20px;
+    }
+    footer > div:nth-child(3) {
+        font-size: 12px;
+    }
+
+    input[type="file"]::-webkit-file-upload-button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+    }
+
+    .me-1 {
+        padding: 20px 0;
+    }
+
+    .me-1 div table {
+        font-size: 12px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .dua .layanan {
+        width: 100%;
+        margin-top: 0;
+    }
+    nav ul {
+        width: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 130px;
+    }
+
+    footer > div:nth-child(1) {
+        order: 1;
+        padding-top: 10px;
+    }
+    footer > div:nth-child(2) {
+        order: 3;
+        padding: 20px 0;
+    }
+    footer > div:nth-child(3) {
+        order: 2;
+    }
+
+    article.satu h3 {
+        font-size: 18px;
+    }
+    article.satu p {
+        font-size: 14px;
+    }
+    .toggle {
+        display: none;
+    }
+
+    main#content article.satu {
+        flex-direction: column;
+    }
+
+    main#content article aside {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    #form form {
+        flex-direction: column;
+    }
+
+    #form form > div {
+        width: 80%;
+        margin: auto;
+    }
+}
+/* Smartphone */
+@media screen and (max-width: 576px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: white;
+        border-left: 1px solid rgba(0, 0, 0, 0.178);
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        visibility: hidden;
+        flex-direction: column;
+        padding-top: 70px;
+        transition: opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+    }
+
+    nav .slide {
+        opacity: 1;
+        visibility: visible;
+    }
+    nav .jarak {
+        height: 70vh;
+    }
+    .toggle {
+        display: flex;
+    }
+
+    #form form > div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .me-1 div table {
+        height: 120px;
+    }
+
+    .me-1 div {
+        flex-direction: column-reverse;
+    }
+    .me-1 div img {
+        margin: 20px auto 20px;
+    }
+    .me-1 div table {
+        margin: auto;
+    }
+}
+/* Monitor */
+@media screen and (min-width: 1120px) {
+    nav ul {
+        width: 25%;
+    }
+
+    .dua .layanan > div {
+        margin: 0px 30px;
+    }
+
+    .dua .layanan {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #form form {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: stretch;
+    }
+
+    #form form > div {
+        width: 40%;
+    }
+    main#content article aside {
+        width: 55%;
+    }
+
+    .me {
+        width: 50%;
+    }
+
+    .read-more {
+        display: none;
+    }
+
+    .text-more {
+        display: inline;
+    }
+}
